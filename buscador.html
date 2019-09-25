@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-
- 
-  <!-- Title -->
+<!-- Title -->
   <title>PlatziVideo</title>
 </head>
-
-  <!-- Styles -->
+<!-- Styles -->
 <style>
+  * {
+    box-sizing: border-box;
+  }
   body {
     margin: 0px;
     font-family: 'Muli', sans-serif;
-    background-color: #AB88FF;
+    background-color: #8E57ED;
   }
   .header {
-    background-color: #AB88FF;
+    background-color: #8E57ED;
     width: 100%;
     height: 80px;
     display: flex;
@@ -44,7 +44,6 @@
     width: 100px;
     text-align: right;
     margin: 0px 0px 0px -14px;
-
   }
   .header__menu:hover ul, ul:hover {
     /* Menú desplegable */
@@ -74,6 +73,33 @@
     margin: 0px;
     color: white;
   }
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+  }
+  .main__title {
+    color: white;
+    font-size: 25px;
+  }
+  .input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    width: 70%;
+    outline: none;
+  }
+  ::placeholder {
+    color: white;
+  }
+  
 </style>
 <body>
   <header class="header">
@@ -90,5 +116,9 @@
     </div>
     <!-- <img src="user-icon.png" alt=""> -->
   </header>
+  <section class="main">
+    <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+    <input class="input" type="text" placeholder="Buscar...">
+  </section>
 </body>
 </html>
